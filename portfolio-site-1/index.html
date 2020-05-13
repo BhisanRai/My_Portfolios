@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
@@ -28,9 +28,171 @@
 
         <div class="content-wrapper">
             <div class="portfolio-items-wrapper">
-                
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img1.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/quip.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img2.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/devcamp.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img3.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/eventbrite.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img4.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/shop-hacker.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img5.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/crondose.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img6.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/dailysmarty.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img7.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/dashtrack.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img8.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/devtrunk.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img9.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/edutechional.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img10.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/ministry-safe.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img11.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/open-devos.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/img12.jpg)"> </div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logowrapper">
+                            <img src="image/logos/toastability.png" alt="">
+                        </div>
+
+                        <div class="subtitle">Don't you think that this image has any unique property?</div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      
+        portfolioItems.forEach(portfolioItem => {
+          portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+          });
+      
+          portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+          });
+        });
+      
+      </script>
 </body>
 </html>
